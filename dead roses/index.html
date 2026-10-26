@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>dead roses // personal webspace</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="site-shell">
+
+    <!-- TOP BANNER -->
+    <header class="top-banner">
+        <div class="banner-image">
+            <span class="banner-label">a little corner of the internet</span>
+            <h1>dead<span> roses</span></h1>
+            <p>enjoy your stay.</p>
+        </div>
+        <div class="banner-bottom">
+            <span>✦ WELCOME, STRANGER ✦</span>
+            <span>STATUS: ONLINE</span>
+        </div>
+    </header>
+
+    <!-- THREE-COLUMN PAGE -->
+    <div class="page-grid">
+
+        <!-- LEFT NAVIGATION -->
+        <aside class="left-column">
+
+            <section class="bevel nav-box">
+                <h2 class="box-title">navigation</h2>
+
+                <p class="nav-heading">MAIN DIRECTORY</p>
+                <nav class="nav-links">
+                    <a href="#home">↳ home</a>
+                    <a href="#about">↳ about me</a>
+                    <a href="#diary">↳ diary</a>
+                    <a href="#favorites">↳ favorites</a>
+                    <a href="#gallery">↳ gallery</a>
+                    <a href="#links">↳ links</a>
+                </nav>
+
+                <div class="etched-line"></div>
+
+                <p class="nav-heading">EXTRA FILES</p>
+                <nav class="nav-links">
+                    <a href="#music">↳ music player</a>
+                    <a href="#updates">↳ updates</a>
+                    <a href="#credits">↳ credits</a>
+                </nav>
+            </section>
+
+            <section class="bevel">
+                <h2 class="box-title">who the hell is he?</h2>
+
+                <div class="profile-pic">
+                    <img src="images/pfp.jpg" alt="My profile picture">
+                </div>
+
+                <h3 class="center">rue</h3>
+                <p class="muted center">somewhere in the static</p>
+
+                <div class="etched-line"></div>
+
+                <p><b>mood:</b>bored</p>
+                <p><b>listening:</b>Deftones</p>
+                <p><b>status:</b> <span class="red-text">under construction</span></p>
+            </section>
+
+            <section class="bevel mini-box">
+                <h2 class="box-title">site stats</h2>
+                <p>visitor no. <span class="red-text">000013</span></p>
+                <p>last update: 10.26.26</p>
+                <p class="muted">thanks for stopping by!</p>
+            </section>
+
+        </aside>
+
+        <!-- CENTER CONTENT -->
+        <main class="center-column" id="home">
+
+            <section class="bevel welcome-panel">
+                <div class="window-bar">
+                    <span>read_me.txt</span>
+                    <span class="window-controls">_ □ ×</span>
+                </div>
+
+                <div class="welcome-content">
+                    <div class="welcome-symbol">✶</div>
+
+                    <div>
+                        <p class="eyebrow">FILE 001 // INTRODUCTION</p>
+                        <h2>hello, stranger.</h2>
+
+                        <p>
+                            Welcome to dead roses, a little site i made out of boredom
+                        </p>
+
+                        <p>
+                            Feel free to look around. Nothing here is
+                            particularly important.
+                        </p>
+
+                        <p class="signature">— rue ⛧</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bevel content-panel" id="about">
+                <div class="window-bar">
+                    <span>about me</span>
+                    <span>FILE SIZE: SMALL</span>
+                </div>
+
+                <h2>a little about me</h2>
+                <p>
+                    I'm a bored teenager who just so happen to know a little about making these kinda thing.
+                </p>
+                <p>
+                    Interests include music, art, obscure or weird animals.
+                </p>
+
+                <div class="tag-row">
+                    <span>internet kid</span>
+                    <span>music addict</span>
+                    <span>airhead</span>
+                </div>
+            </section>
+
+                        <section class="bevel content-panel" id="music">
+    <div class="window-bar">
+        <span>media_player.exe</span>
+        <span class="window-controls">_ □ ×</span>
+    </div>
+
+    <div class="real-player">
+
+        <div class="player-screen">
+            <div class="album-cover" id="album-cover">
+                <span>♫</span>
+            </div>
+
+            <div class="track-info">
+                <p class="eyebrow">NOW PLAYING // DEAD ROSES FM</p>
+                <h3 id="track-title">select a track</h3>
+                <p class="muted" id="track-artist">unknown artist</p>
+
+                <div class="player-status" id="player-status">
+                    STOPPED // READY
+                </div>
+            </div>
+        </div>
+
+        <div class="player-timeline">
+            <span id="current-time">00:00</span>
+
+            <input
+                type="range"
+                id="seek-bar"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                aria-label="Seek through track"
+            >
+
+            <span id="duration">00:00</span>
+        </div>
+
+        <div class="player-controls">
+            <button type="button" id="prev-btn" aria-label="Previous track">|◀</button>
+            <button type="button" id="play-btn" class="play-button" aria-label="Play">▶</button>
+            <button type="button" id="next-btn" aria-label="Next track">▶|</button>
+
+            <label class="volume-control">
+                VOL
+                <input
+                    type="range"
+                    id="volume-bar"
+                    min="0"
+                    max="1"
+                    value="0.7"
+                    step="0.05"
+                    aria-label="Volume"
+                >
+            </label>
+        </div>
+
+        <div class="playlist-heading">
+            <span>PLAYLIST.m3u</span>
+            <span id="track-count">03 TRACKS</span>
+        </div>
+
+        <div class="playlist" id="playlist">
+        </div>
+
+        <audio id="audio-player" preload="metadata"></audio>
+
+    </div>
+
+    <p class="muted player-footer">
+        DEAD ROSES RADIO // headphones recommended ♡
+    </p>
+</section>
+
+            <section class="bevel content-panel" id="diary">
+                <div class="window-bar">
+                    <span>diary</span>
+                    <span>PERSONAL RECORDS</span>
+                </div>
+
+                <p class="eyebrow">LATEST ENTRY // 10.26.26</p>
+                <h2>testing things out</h2>
+
+                <p>
+                   I was just testing this. And it works, check it out.
+                </p>
+
+                <p class="entry-footer">posted by your rue // entry #001</p>
+
+                <div class="etched-line"></div>
+            </section>
+
+            <section class="bevel content-panel" id="favorites">
+                <div class="window-bar">
+                    <span>favorites</span>
+                    <span>LOADED</span>
+                </div>
+
+                <h2>current obsessions</h2>
+
+                <div class="favorite-grid">
+                    <div class="favorite-item">
+                        <span class="favorite-icon">♫</span>
+                        <span>Nu Metal</span>
+                    </div>
+                    <div class="favorite-item">
+                        <span class="favorite-icon">✦</span>
+                        <span>Old Internet</span>
+                    </div>
+                    <div class="favorite-item">
+                        <span class="favorite-icon">♡</span>
+                        <span>Animals</span>
+                    </div>
+                    <div class="favorite-item">
+                        <span class="favorite-icon">☾</span>
+                        <span>Rainy Nights</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bevel content-panel" id="gallery">
+                <div class="window-bar">
+                    <span>image_archive</span>
+                    <span>4 FILES</span>
+                </div>
+
+                <h2>little fragments.</h2>
+                <p class="muted">
+                    A space for pictures i take or find.
+                </p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-placeholder">IMAGE_01</div>
+                    <div class="gallery-placeholder">IMAGE_02</div>
+                    <div class="gallery-placeholder">IMAGE_03</div>
+                    <div class="gallery-placeholder">IMAGE_04</div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-column">
+
+            <section class="bevel" id="updates">
+                <h2 class="box-title">bulletin board</h2>
+
+                <div class="notice">
+                    <span class="notice-date">10.26.26</span>
+                    <p>the music player actually works what the heck</p>
+                </div>
+
+                <div class="notice">
+                    <span class="notice-date">10.26.26</span>
+                    <p>this is the bulletin board, hello.</p>
+                </div>
+
+                <div class="notice">
+                    <span class="notice-date">10.26.26</span>
+                    <p>this site is still work in progress by the way</p>
+                </div>
+            </section>
+
+            <section class="bevel">
+                <h2 class="box-title">currently</h2>
+
+                <p class="small-heading">LISTENING</p>
+                <p>Deftones</p>
+
+                <div class="etched-line"></div>
+
+                <p class="small-heading">FEELING</p>
+                <p>funky</p>
+
+                <div class="etched-line"></div>
+
+                <p class="small-heading">WORKING ON</p>
+                <p>this site</p>
+            </section>
+
+            <section class="bevel" id="links">
+                <h2 class="box-title">links and shortcuts</h2>
+
+                <div class="nav-links">
+                    <a href="#home">↳ back to the top</a>
+                    <a href="#diary">↳ read my diary</a>
+                    <a href="#gallery">↳ image archive</a>
+                </div>
+            </section>
+
+            <section class="bevel quote-box">
+                <p class="quote-mark">"</p>
+                <p>insert philosophical quotes here, i cant think of one</p>
+                <p class="muted">— a note to myself</p>
+            </section>
+
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bevel site-footer" id="credits">
+        <p>⛧ END OF TRANSMISSION ⛧</p>
+        <p>made by rue // built with html & css</p>
+        <a href="#home">return to top ↑</a>
+    </footer>
+
+</div>
+<script src="player.js"></script>
+</body>
+</html>
